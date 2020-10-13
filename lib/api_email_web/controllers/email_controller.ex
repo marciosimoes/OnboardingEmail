@@ -1,6 +1,6 @@
 defmodule ApiEmailWeb.EmailController do
   use ApiEmailWeb, :controller
-  alias ApiEmail.EmailService
+  alias ApiEmail.Service.EmailService
   alias ApiEmailWeb.Mailer
 
   def send_email(conn, %{"arquivo" => file}) do

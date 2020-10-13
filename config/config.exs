@@ -33,3 +33,6 @@ import_config "#{Mix.env()}.exs"
 config :api_email, ApiEmailWeb.Mailer,
   adapter: Swoosh.Adapters.Sendgrid,
   api_key: "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"
+
+config :logger,
+  backends: [:console, Sentry.LoggerBackend]

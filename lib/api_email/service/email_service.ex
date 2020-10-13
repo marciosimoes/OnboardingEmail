@@ -1,4 +1,4 @@
-defmodule ApiEmail.EmailService do
+defmodule ApiEmail.Service.EmailService do
   import Swoosh.Email
 
   def send(file) do

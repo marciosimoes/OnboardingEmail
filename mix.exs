@@ -51,7 +51,8 @@ defmodule ApiEmail.MixProject do
       {:swoosh, "~> 1.0"},
       {:gen_smtp, "~> 0.13"},
       {:hackney, "~> 1.16"},
-      {:file_system, "~> 0.2"}
+      {:file_system, "~> 0.2"},
+      {:sentry, "8.0.0"}
     ]
   end
 
