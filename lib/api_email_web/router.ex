@@ -20,7 +20,10 @@ defmodule ApiEmailWeb.Router do
     live "/", PageLive, :index
 
     #APIs de envio de emails
-     post "/send_email", EmailController, :send_email
+    post "/send_email", EmailController, :send_email
+
+    # checando sentry
+    get "/sentry_check", PageController, :sentry_check
   end
 
   # Other scopes may use custom stacks.
